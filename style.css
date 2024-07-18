@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #aaebae, #48a4dd);
+  overflow: hidden;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  position: sticky;
+  z-index: 1;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.nav-links ul a {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.nav-links ul a:hover {
+  color: #f4f73f;
+  transition: .3s;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+  margin-right: 12px;
+}
+
+
+
+
+.information {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -40%;
+  transform: translateY(-50%);
+}
+
+#circle {
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  border-radius: 50%;
+  top: 175px;
+  left: 40%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.feature {
+  position: absolute;
+  color: #fff;
+  display: flex;
+}
+
+.feature img {
+  width: 70px;
+}
+
+.one {
+  top: 50%;
+  left: 450px;
+  transform: translateY(-60%);
+}
+.two {
+  top: 50px;
+  left: 200px;
+  transform: rotate(-90deg);
+}
+.three {
+  top: 290px;
+  left: -115px;
+  transform: rotate(-180deg);
+}
+.four {
+  bottom: 50px;
+  right: 210px;
+  transform: rotate(-270deg);
+}
+
+.feature .text {
+  margin-left: 20px;
+}
+.feature .text a {
+  text-decoration: none;
+  color: #fff;
+}
+.feature .text p {
+  margin-top: 5px;
+}
+
+.pc {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 58%;
+  z-index: 1;
+}
+
+
+.control {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.control img {
+  width: 15%;
+}
+.control h3 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+#upBtn {
+  cursor: pointer;
+}
+#downBtn {
+  cursor: pointer;
+  transform: rotate(-180deg);
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  border-top: #fff 520px solid;
+  border-right: transparent 520px solid;
+  border-bottom: #fff 520px solid;
+  border-left: #fff 700px solid;
+}
